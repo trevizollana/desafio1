@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta name="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script type="text/javascript" src="main.js" defer></script>
+<body>
+  <h1>Galeria de Imagens</h1>
+  <!--Botões para avançar e voltar-->
+  <a class="esquerda" onclick="proximaImagem(-1)"> < </a><!--chama a função que volta a imagem, o (-1) informa 
+  que a função deve voltar 1 imagem-->
+  <a class="direita" onclick="proximaImagem(1)"> > </a><!--chama a função que avança a imagem, o (1) informa 
+    que a função deve avançar 1 imagem-->
+
+  <!--São as imagens que serão selecionadas como principal-->
+<div class="container">
+  <div class="imagem">
+    <img src="img\1.jpg" width="100%" alt="padrinhos magicos">
+  </div>
+
+  <div class="imagem">
+    <img src="img\2.jpg" width="100%" alt="padrinhos magicos">
+  </div>
+
+  <div class="imagem">
+    <img src="img\3.webp" width="100%" alt="padrinhos magicos">
+  </div>
+
+  <div class="imagem">
+    <img src="img\4.jpg" width="100%" alt="padrinhos magicos">
+  </div>
+
+  <div class="imagem">
+    <img src="img\5.jpg" width="100%" alt="padrinhos magicos">
+  </div>
+
+  <div class="imagem">
+    <img src="img\6.webp" width="100%" alt="padrinhos magicos">
+  </div>
+  
+  <!--São as imagens menores que ficam na parte inferior e servem como "guia"-->
+  <!--ao clicar na imagem a função chamada direciona a imagem clicada como imagem principal-->
+  <div class="col-2">
+    <img class="guia" src="img/1.jpg" width="100%" onclick="imagemAtual(1)" alt="padrinhos magicos">
+  </div>
+  <div class="col-2">
+    <img class="guia" src="img/2.jpg" width="100%" onclick="imagemAtual(2)" alt="padrinhos magicos">
+  </div>
+  <div class="col-2">
+    <img class="guia" src="img/3.webp" width="100%" onclick="imagemAtual(3)" alt="padrinhos magicos">
+  </div>
+  <div class="col-2">
+    <img class="guia" src="img/4.jpg" width="100%" onclick="imagemAtual(4)" alt="padrinhos magicos">
+  </div>
+  <div class="col-2">
+    <img class="guia" src="img/5.jpg" width="100%" onclick="imagemAtual(5)" alt="padrinhos magicos">
+  </div>
+  <div class="col-2">
+    <img class="guia" src="img/6.webp" width="100%" onclick="imagemAtual(6)" alt="padrinhos magicos">
+  </div>
+  
+</body>
+</html>
